@@ -1,0 +1,31 @@
+=======================================
+🐍 Tutorial: Ambiente Virtual + Requirements
+=======================================
+
+1. Verifique se o Python está instalado:
+   - Windows:     python --version
+   - macOS/Linux: python3 --version
+
+2. Crie o ambiente virtual:
+   - Windows:     python -m venv venv
+   - macOS/Linux: python3 -m venv venv
+
+3. Ative o ambiente virtual:
+   - Windows CMD:     venv\Scripts\activate
+   - PowerShell:      .\venv\Scripts\Activate.ps1
+   - macOS/Linux:     source venv/bin/activate
+
+4. Instale os pacotes do requirements.txt:
+   pip install -r requirements.txt
+
+5. Verifique a instalação:
+   pip list
+
+6. Para desativar o ambiente:
+   deactivate
+
+OU
+
+Execute o script:
+- No Windows:     execute setup_windows.bat
+- No macOS/Linux: execute: chmod +x setup_unix.sh && ./setup_unix.sh

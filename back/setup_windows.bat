@@ -1,0 +1,7 @@
+@echo off
+REM Script para configurar ambiente virtual e instalar requirements
+python -m venv venv
+call venv\Scripts\activate
+pip install -r requirements.txt
+echo Ambiente configurado com sucesso!
+pause
