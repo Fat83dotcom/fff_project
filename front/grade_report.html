@@ -17,29 +17,30 @@
     </header>
     <div class="container">
       <h1>Boletim</h1>
-      <form id="student-form">
-        <label for="studant">Estudante:</label>
-        <input type="text" id="name" name="name" required maxlength="100" />
+      <form id="grade-report-form">
+        <label for="student">Aluno:</label>
+        <select id="student" name="student" required></select>
 
-        <label for="academic year">Ano Academico:</label>
+        <label for="modules">Matérias:</label>
+        <select id="modules" name="modules" multiple required></select>
+
+        <label for="academic_year">Ano Letivo:</label>
         <input
-          type="number"
-          id="acadeimc_year"
-          name="Ano Letivo"
+          type="text"
+          id="academic_year"
+          name="academic_year"
+          maxlength="4"
           required
-          maxlength="255"
+        />
 
         <label for="semester">Semestre:</label>
-        <input
-          type="number"
-          id="semester"
-          name="Semestre"
-          required
-          maxlength="255"
+        <select id="semester" name="semester" required>
+          <option value="1">1º Semestre</option>
+          <option value="2">2º Semestre</option>
+        </select>
 
-        >
-        <button type="submit">Salvar</button>
-        <p id="message" class="hidden"></p>
+        <button type="submit">Salvar Boletim</button>
+        <p id="grade-message" class="hidden"></p>
       </form>
     </div>
 
