@@ -15,8 +15,37 @@
         <a href="grade_report.html">Boletim</a>
       </nav>
     </header>
-    <h1>Matéria</h1>
-    <!-- formulario aqui -->
-    <!-- tabela aqui -->
+    <div class="container">
+      <h1>Cadastro de Matéria</h1>
+      <form id="modules-form">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required maxlength="100" />
+
+        
+
+        <button type="submit">Salvar</button>
+        <p id="message" class="hidden"></p>
+      </form>
+    </div>
+
+    <hr />
+
+    <h2>Matérias Cadastradas</h2>
+    <button id="refresh-button" type="button" onclick="loadModules()">
+      🔄 Atualizar Lista de Matérias
+    </button>
+
+    <table id="modules-table">
+      <thead>
+        <tr>
+          <th>Nome</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Os dados serão inseridos aqui via JavaScript -->
+      </tbody>
+    </table>
+
+    <script src="./assets/js/modules_script.js"></script>
   </body>
 </html>
